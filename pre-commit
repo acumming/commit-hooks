@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-import argparse
 import os
 import re
 import sys
@@ -12,7 +11,6 @@ CHECKS = [
 
     {
         'output': 'Checking for trailing whitespace...',
-        'warning': 'Trailing whitespace found in %s!',
         'command': 'grep -n "\s$" %s',
         'match_files': ['.*'],
         'print_filename': True
